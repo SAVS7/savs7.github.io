@@ -46,7 +46,7 @@
 .content-about h2 {
     font-size: 30px;
     text-transform: uppercase;
-    background:linear-gradient( to left,rgb(133, 170, 170),#060613,rgb(133, 170, 170),#7e94dd );
+    background:linear-gradient( to left,rgb(133, 170, 170),rgb(133, 170, 170),#060613 ,rgb(133, 170, 170));
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -191,22 +191,6 @@
 }
 
 
-.detail-content {
-    font-size: 15px;
-    background:linear-gradient( to left,rgb(133, 170, 170),#060613,rgb(133, 170, 170),#7e94dd );
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation:animate-gradient 4s linear ;
-
-}
-@keyframes animate-gradient {
-    to{
-        background-position: 200%;
-    }
-}
-
 .list-skills a {
     opacity: 0;
     transform: translateY(100px); 
@@ -239,6 +223,26 @@
       transform: translateX(0);
     }
   }
+
+
+.detail-content  {
+    color: (164, 245, 245);
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInContent-icon 4s ease forwards;
+
+}
+  @keyframes fadeInContent-icon {
+    60% {
+      opacity: 0;
+      transform: translateZ(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
 
 .icon-content h2  {
     opacity: 0;
@@ -357,17 +361,3 @@
 .body-skills a {
   color: #cecede;
 }
-
-
-
-  @media only screen and (max-width: 600px) {
-        .body-html-content,.content-about,.detail-content,.icon-content,
-        .body-html-education,.content-education,
-        .body-certificate,.body-project,
-        .body-skills ,.list-skills,
-        .body-html-detail,.detail-content{
-          max-width:100%;
-          height:auto;
-          text-align: center;
-    }
-  }
