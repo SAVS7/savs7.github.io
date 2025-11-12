@@ -339,7 +339,8 @@
                 background-repeat:no-repeat;
                 background-size: cover;
                 background-attachment:fixed;
-              }
+              
+}
 
               
 .body-html-education ,.body-skills ,.body-project ,.body-certificate ,.body-html-detail{
@@ -360,7 +361,13 @@
 
 
   @media only screen and (max-width: 600px) {
-        .body-html-content,.detail-content,.icon-content {
-        text-align: center;
+        .body-html-content,.content-about,.detail-content,.icon-content,
+        .body-html-education,.content-education,
+        .body-certificate,.body-project,
+        .body-skills ,.list-skills,
+        .body-html-detail,.detail-content{
+          max-width:100%;
+          height:auto;
+          text-align: center;
     }
   }
