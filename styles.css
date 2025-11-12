@@ -5,7 +5,7 @@
 
 .content-education,
 .body-html-education h1, 
-.content-about p , .list-skills , 
+.content-about p , 
 .body-skills h1,
 .body-project h1 ,
 .body-project pre ,
@@ -14,7 +14,7 @@
 .icon-content h2,
 .body-html-detail pre
 {
-    color:#EEF2FF
+    color: #cecede;
 }
 
 
@@ -151,8 +151,7 @@
   color: rgb(133, 170, 170);
 }
 
-.body-certificate a,
-.body-skills a , 
+.body-certificate a, 
 .body-project a ,
 .project-details-redirect a {
   color: rgb(153, 197, 197);
@@ -163,7 +162,7 @@
     opacity: 0;
     transform: translateY(100px); 
     animation: fadeInContent-all 1.5s ease forwards;
-    color: #7e94dd;
+    color: #3a3a3a;
 
 }
   @keyframes fadeInContent-all {
@@ -181,7 +180,7 @@
     opacity: 0;
     transform: translateY(50px); 
     animation: fadeInContent-all 1.5s ease forwards;
-    color: #7e94dd;
+    color:  #3a3a3a;
 
 }
   @keyframes fadeInContent-all {
@@ -339,3 +338,26 @@
     }
   
   }  
+
+.body-html-content {
+                background-image: url('/images/bg.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+              }
+
+              
+.body-html-education ,.body-skills ,.body-project ,.body-certificate ,.body-html-detail{
+
+                background-image: url('/images/bg-1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+
+}
+
+
+
+.body-skills a {
+  color: #cecede;
+}
