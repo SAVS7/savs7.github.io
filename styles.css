@@ -1,0 +1,321 @@
+.body-html-content , .body-html-education ,.body-skills ,.body-project ,.body-certificate{
+    background-color: rgb(0, 0, 0);
+}
+
+
+.content-education,
+.body-html-education h1, 
+.content-about p , .list-skills , 
+.body-skills h1,
+.body-project h1 ,
+.body-project pre ,
+.body-certificate h1,
+.body-certificate pre,
+.icon-content h2
+{
+    color:#EEF2FF
+}
+
+
+
+.icon-content a ,
+.detail-content a ,
+.list-skills a,
+.body-project a,
+.body-certificate a
+{
+    text-decoration : none;
+
+}
+
+.icon-content ,
+.detail-content  {
+    text-decoration : none;
+    display: block;
+}
+
+
+.content-about,.detail-content,.icon-content  {
+    text-align: center;
+
+}
+.back-to-home{
+    text-align: right;
+}
+.detail-content{
+    font-size: large;
+}
+
+
+.content-about h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    background:linear-gradient( to left,rgb(133, 170, 170),#060613,rgb(133, 170, 170),#7e94dd );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:animate-gradient 4s linear ;
+
+}
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+}
+
+
+
+
+.content-education {
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeInContent 1.5s ease forwards;
+  }
+
+  .content-education pre {
+    font-size: 15px;
+  }
+
+  
+  @keyframes fadeInContent {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+  }
+
+
+.body-project pre{
+    opacity: 0;
+    transform: translateZ(100px); 
+    animation: fadeInContent-project-pre 3s ease forwards;
+  }
+
+  @keyframes fadeInContent-project-pre {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+  } 
+
+
+.project-details-redirect{
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInContent-project-redirect 6s ease forwards;
+  }
+
+  @keyframes fadeInContent-project-redirect {
+    0% {
+      opacity: 0;
+      transform: translateZ(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+  }  
+
+  .body-certificate a{
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInContent-certificate-a 7s ease forwards;
+  }
+
+  @keyframes fadeInContent-certificate-a {
+    0% {
+      opacity: 0;
+      transform: translateZ(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+  }  
+
+.detail-content a{
+  color: rgb(133, 170, 170);
+}
+
+.body-certificate a,
+.body-skills a , 
+.body-project a ,
+.project-details-redirect a {
+  color: rgb(153, 197, 197);
+}
+
+
+.back-to-home a ,.body-project h1 {
+    opacity: 0;
+    transform: translateY(100px); 
+    animation: fadeInContent-all 1.5s ease forwards;
+    color: #7e94dd;
+
+}
+  @keyframes fadeInContent-all {
+    60% {
+      opacity: 0;
+      transform: translateZ(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+  }
+.body-html-education h1 , .body-skills h1 ,.body-certificate h1{
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInContent-all 1.5s ease forwards;
+    color: #7e94dd;
+
+}
+  @keyframes fadeInContent-all {
+    50% {
+      opacity: 0;
+      transform: translateZ(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+}
+
+
+.detail-content {
+    font-size: 15px;
+    background:linear-gradient( to left,rgb(133, 170, 170),#060613,rgb(133, 170, 170),#7e94dd );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:animate-gradient 4s linear ;
+
+}
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+}
+
+.list-skills a {
+    opacity: 0;
+    transform: translateY(100px); 
+    animation: fadeInContent-icon 1.5s ease forwards;
+    font-size: 15px;
+}
+.list-skills a:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.list-skills a:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.list-skills a:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.list-skills a:nth-child(4) {
+  animation-delay: 2s;
+}
+
+  @keyframes fadeInContent-icon {
+    0% {
+      opacity: 0;
+      transform: translateZ(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.icon-content h2  {
+    opacity: 0;
+    transform: translateY(100px); 
+    animation: fadeInContent-icon 6s ease forwards;
+    color: #7e94dd;
+
+}
+  @keyframes fadeInContent-icon {
+    60% {
+      opacity: 0;
+      transform: translateZ(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.icon-content a{
+    opacity: 0;
+    transform: translateY(100px); 
+    animation: fadeInContent-icon 6s ease forwards;
+    color: #7e94dd;
+
+}
+  @keyframes fadeInContent-icon {
+    60% {
+      opacity: 0;
+      transform: translateZ(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.content-about h1{
+    font-size: 30px;
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeInContent-p 3.75s ease forwards;
+  }
+
+  
+  @keyframes fadeInContent-p {
+    50% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+  }
+
+
+    .body-certificate pre{
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInContent-certificate-a 4.25s ease forwards;
+  }
+
+  @keyframes fadeInContent-certificate-a {
+    30% {
+      opacity: 0;
+      transform: translateZ(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+  }  
