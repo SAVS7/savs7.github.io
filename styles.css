@@ -67,7 +67,7 @@ html, body {
     font-style: italic;
     font-size: clamp(20px, 5vw, 30px); 
     text-transform: uppercase;
-    background: linear-gradient(to left, rgb(133, 170, 170), rgb(133, 170, 170), #786031, rgb(133, 170, 170));
+    background: linear-gradient(to left, rgb(133, 170, 170), rgb(133, 170, 170), #251c0c, rgb(133, 170, 170));
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -459,4 +459,50 @@ html, body {
 .icon-content h2{
     padding: 65px;
     padding-bottom: 10px;
+}
+
+
+
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    overflow-x: hidden;
+}
+
+
+.body-html-content,
+.body-html-education,
+.body-skills,
+.body-project,
+.body-certificate,
+.body-html-detail {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #000; 
+}
+
+
+@supports (-webkit-touch-callout: none) {
+    .body-html-content,
+    .body-html-education,
+    .body-skills,
+    .body-project,
+    .body-certificate,
+    .body-html-detail {
+        background-attachment: scroll; 
+    }
+}
+
+
+body {
+    overflow-y: auto;
+    background-color: #000; 
 }
