@@ -20,7 +20,8 @@ html, body {
 .body-project pre,
 .body-certificate h1,
 .body-certificate pre,
-.body-html-detail pre {
+.body-html-detail pre,
+.content-contact-detail a {
     color: #332d21;
 }
 
@@ -33,7 +34,8 @@ html, body {
 }
 
 .icon-content,
-.detail-content {
+.detail-content,
+.content-contact-detail  a {
     text-decoration: none;
     display: block;
 }
@@ -379,7 +381,8 @@ html, body {
 .content-about p, 
 .body-project pre,
 .body-certificate pre,
-.body-html-detail pre {
+.body-html-detail pre,
+.content-contact-detail a {
     color: #cecede;
 }
 
