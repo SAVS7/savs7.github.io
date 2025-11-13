@@ -20,7 +20,6 @@ html, body {
 .body-project pre,
 .body-certificate h1,
 .body-certificate pre,
-.icon-content h2,
 .body-html-detail pre {
     color: #332d21;
 }
@@ -267,7 +266,6 @@ html, body {
     opacity: 0;
     transform: translateY(100px);
     animation: fadeInContent-icon 6s ease forwards;
-    color: #7e94dd;
     margin: 0 10px;
 }
 
