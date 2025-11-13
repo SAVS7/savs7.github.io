@@ -378,7 +378,7 @@ html, body {
 
 
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) { 
 .content-education, 
 .content-about p, 
 .body-project pre,
@@ -406,7 +406,6 @@ html, body {
     }
     
     .detail-content a {
-        width: 190px;
         text-align: center;
     }
     
@@ -419,8 +418,8 @@ html, body {
         word-wrap: break-word;
         padding: 0 10px;
     }
-}
 
+ }
 @media (max-width: 480px) {
     .container {
         padding: 0 10px;
