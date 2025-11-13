@@ -66,7 +66,7 @@ html, body {
     font-style: italic;
     font-size: clamp(20px, 5vw, 30px); 
     text-transform: uppercase;
-    background: linear-gradient(to left, rgb(133, 170, 170), rgb(133, 170, 170), #332d21, rgb(133, 170, 170));
+    background: linear-gradient(to left, rgb(133, 170, 170), rgb(133, 170, 170), #715e37, rgb(133, 170, 170));
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -452,11 +452,6 @@ html, body {
     .content-about h1 {
         font-size: 2rem;
     }
-}
-
-.body-html-content h1 
-{
-    padding: 0px 0px 10px 10px;
 }
 
 .detail-content pre {
