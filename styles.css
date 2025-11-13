@@ -424,6 +424,10 @@ html, body {
         padding: 0 10px;
     }
     
+    .detail-content a {
+        width: 100%;
+        max-width: 200px;
+    }
     
     .icon-content pre {
         gap: 10px;
