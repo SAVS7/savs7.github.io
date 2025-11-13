@@ -62,11 +62,12 @@ html, body {
 }
 
 .content-about h2 {
-    padding: 60px;
+    padding-top: 40px;
+    padding-bottom: 120px;
     font-style: italic;
     font-size: clamp(20px, 5vw, 30px); 
     text-transform: uppercase;
-    background: linear-gradient(to left, rgb(133, 170, 170), rgb(133, 170, 170), #715e37, rgb(133, 170, 170));
+    background: linear-gradient(to left, rgb(133, 170, 170), rgb(133, 170, 170), #786031, rgb(133, 170, 170));
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
