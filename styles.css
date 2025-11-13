@@ -359,7 +359,6 @@ html, body {
 } 
 
 .detail-content a{
-    padding: 10px 20px;
     transition: all 0.3s ease;
 }
 
@@ -425,10 +424,6 @@ html, body {
         padding: 0 10px;
     }
     
-    .detail-content a {
-        width: 100%;
-        max-width: 200px;
-    }
     
     .icon-content pre {
         gap: 10px;
