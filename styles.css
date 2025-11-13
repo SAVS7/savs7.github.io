@@ -22,7 +22,7 @@ html, body {
 .body-certificate pre,
 .icon-content h2,
 .body-html-detail pre {
-    color: #cecede;
+    color: #332d21;
 }
 
 .icon-content a,
@@ -377,6 +377,19 @@ html, body {
 
 
 @media (max-width: 768px) {
+.content-education,
+.body-html-education h1, 
+.content-about p, 
+.body-skills h1,
+.body-project h1,
+.body-project pre,
+.body-certificate h1,
+.body-certificate pre,
+.icon-content h2,
+.body-html-detail pre {
+    color: #cecede;
+}
+
     .container {
         padding: 0 15px;
     }
