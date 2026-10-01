@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vasanthakumar S | Automation Engineer</title>
+  <meta name="description" content="Portfolio of Vasanthakumar S, Automation Engineer specializing in n8n workflow automation, Python, REST API testing and Selenium UI test automation." />
+  <meta name="theme-color" content="#0c0c0f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vasanthakumar S | Automation Engineer" />
+  <meta property="og:description" content="n8n workflow automation, Python, REST API testing and Selenium UI test automation." />
+  <meta property="og:url" content="https://savs7.github.io/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0c0f'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23e6e6e6' font-family='Arial,sans-serif' font-weight='600'%3EV%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vasanthakumar S",
+    "jobTitle": "Automation Engineer",
+    "url": "https://savs7.github.io/",
+    "email": "mailto:vaaaasanth7@gmail.com",
+    "sameAs": ["https://github.com/SAVS7", "https://www.linkedin.com/in/vasanthkumar7"],
+    "alumniOf": "University of Madras"
+  }
+  </script>
+  <style>
+    :root {
+      /* Palette carried over from the original site */
+      --bg-1: #0c0c0f;
+      --bg-2: #141418;
+      --text: #e6e6e6;
+      --muted: #bdbdbd;
+      --soft: #b8b8b8;
+      --chip: #d0d0d0;
+      --dim: #9a9a9a;
+      --white: #ffffff;
+      --glass: rgba(255, 255, 255, 0.05);
+      --glass-2: rgba(255, 255, 255, 0.06);
+      --glass-hover: rgba(255, 255, 255, 0.10);
+      --line: rgba(255, 255, 255, 0.12);
+      --line-strong: rgba(255, 255, 255, 0.22);
+    }
+ 
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      color: var(--text);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background: radial-gradient(60% 45% at 50% 0%, rgba(255, 255, 255, 0.06), transparent 70%);
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    :focus-visible { outline: 2px solid var(--white); outline-offset: 3px; border-radius: 6px; }
+ 
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    section { padding-top: 120px; }
+ 
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky; top: 16px; z-index: 50; margin-top: 16px;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 14px 12px 22px; border-radius: 20px;
+      background: rgba(16, 16, 20, 0.7);
+      -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+      border: 1px solid var(--line);
+    }
+    .brand { font-size: 16px; font-weight: 600; letter-spacing: 0.01em; color: var(--white); }
+    .brand small { font-weight: 400; color: var(--dim); margin-left: 10px; font-size: 13px; }
+    .nav { display: flex; align-items: center; gap: 4px; }
+    .nav a { padding: 8px 14px; border-radius: 12px; font-size: 14px; color: var(--muted); transition: color .25s, background .25s; }
+    .nav a:hover { color: var(--white); }
+    .nav a.active { color: var(--white); background: var(--glass-2); }
+    .nav .nav-cta { margin-left: 6px; color: var(--bg-1); background: var(--text); font-weight: 500; }
+    .nav .nav-cta:hover { background: var(--white); color: var(--bg-1); }
+    .nav-toggle { display: none; width: 42px; height: 42px; border-radius: 12px; background: var(--glass-2); border: 1px solid var(--line); color: var(--text); cursor: pointer; }
+    .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after { display: block; width: 18px; height: 2px; background: currentColor; border-radius: 2px; position: relative; margin: auto; }
+    .nav-toggle span::before, .nav-toggle span::after { content: ""; position: absolute; left: 0; }
+    .nav-toggle span::before { top: -6px; } .nav-toggle span::after { top: 6px; }
+ 
+    /* ---------- Buttons / chips ---------- */
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px; border-radius: 14px;
+      font-size: 15px; font-weight: 500; cursor: pointer; border: 1px solid transparent;
+      transition: transform .25s ease, background .25s ease, border-color .25s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--text); color: var(--bg-1); }
+    .btn-primary:hover { background: var(--white); }
+    .btn-ghost { background: var(--glass-2); border-color: var(--line); color: var(--text); }
+    .btn-ghost:hover { background: var(--glass-hover); border-color: var(--line-strong); }
+    .btn svg, .icon-link svg { width: 18px; height: 18px; flex: none; }
+ 
+    .icon-link {
+      display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 14px;
+      background: var(--glass-2); border: 1px solid var(--line); color: var(--chip);
+      transition: transform .25s ease, background .25s ease, color .25s ease;
+    }
+    .icon-link:hover { transform: translateY(-3px); background: var(--glass-hover); color: var(--white); }
+ 
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      display: inline-block; padding: 6px 14px; border-radius: 999px; font-size: 13px; color: var(--chip);
+      background: var(--glass-2); border: 1px solid var(--line);
+    }
+ 
+    /* ---------- Hero ---------- */
+    .hero { padding-top: 110px; }
+    .status {
+      display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px; border-radius: 999px;
+      font-size: 13px; color: var(--chip); background: var(--glass); border: 1px solid var(--line);
+    }
+    .status i { width: 8px; height: 8px; border-radius: 50%; background: var(--white); box-shadow: 0 0 0 0 rgba(255,255,255,.5); animation: pulse 2.4s infinite; }
+    @keyframes pulse { 70% { box-shadow: 0 0 0 9px rgba(255,255,255,0); } 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); } }
+    .hero h1 { margin-top: 28px; font-size: clamp(38px, 6.2vw, 68px); line-height: 1.08; font-weight: 600; letter-spacing: -0.025em; color: var(--white); max-width: 860px; }
+    .hero h1 em { font-style: normal; color: var(--dim); }
+    .hero .lead { margin-top: 26px; font-size: 19px; color: var(--soft); max-width: 640px; font-weight: 300; }
+    .hero-actions { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+    .hero-actions .sep { width: 1px; height: 28px; background: var(--line); margin: 0 6px; }
+    .hero-actions .social { display: flex; gap: 10px; }
+ 
+    /* ---------- Section heads ---------- */
+    .section-head { margin-bottom: 40px; }
+    .eyebrow { display: block; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dim); margin-bottom: 12px; }
+    .section-head h2 { font-size: clamp(28px, 4vw, 38px); font-weight: 600; letter-spacing: -0.02em; color: var(--white); line-height: 1.2; }
+ 
+    /* ---------- Cards ---------- */
+    .card {
+      padding: 32px; border-radius: 28px; background: var(--glass);
+      -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+      border: 1px solid var(--line); transition: border-color .3s ease, transform .3s ease, background .3s ease;
+    }
+    .card.lift:hover { border-color: var(--line-strong); transform: translateY(-4px); background: rgba(255,255,255,0.07); }
+    .card h3 { font-size: 20px; font-weight: 600; color: var(--white); letter-spacing: -0.01em; }
+    .card p { color: var(--muted); }
+ 
+    /* About */
+    .about-text { max-width: 760px; font-size: 18px; color: var(--soft); font-weight: 300; }
+    .about-text strong { color: var(--text); font-weight: 500; }
+    .focus { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .focus .card { padding: 28px; border-radius: 24px; }
+    .focus .num { font-size: 13px; color: var(--dim); letter-spacing: .12em; }
+    .focus h3 { margin: 14px 0 10px; font-size: 18px; }
+    .focus p { font-size: 15px; margin-bottom: 18px; }
+ 
+    /* Timeline */
+    .timeline { position: relative; padding-left: 34px; }
+    .timeline::before { content: ""; position: absolute; left: 5px; top: 10px; bottom: 10px; width: 1px; background: var(--line); }
+    .t-item { position: relative; }
+    .t-item + .t-item { margin-top: 24px; }
+    .t-item::before { content: ""; position: absolute; left: -34px; top: 38px; width: 11px; height: 11px; border-radius: 50%; background: var(--bg-2); border: 2px solid var(--muted); }
+    .t-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+    .t-org { color: var(--dim); font-size: 15px; margin-top: 2px; }
+    .t-date { font-size: 14px; color: var(--chip); padding: 4px 12px; border-radius: 999px; background: var(--glass-2); border: 1px solid var(--line); white-space: nowrap; }
+    .bullets { margin-top: 20px; display: grid; gap: 10px; }
+    .bullets li { position: relative; padding-left: 20px; color: var(--muted); font-size: 15.5px; }
+    .bullets li::before { content: ""; position: absolute; left: 2px; top: 11px; width: 5px; height: 5px; border-radius: 50%; background: var(--dim); }
+    .bullets b { color: var(--text); font-weight: 500; }
+ 
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .projects .wide { grid-column: 1 / -1; }
+    .p-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+    .p-tag { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); margin-bottom: 8px; display: block; }
+    .p-links { display: flex; gap: 10px; flex: none; }
+    .p-links .icon-link { width: 42px; height: 42px; border-radius: 12px; }
+    .project .chips { margin-top: 18px; }
+    .project .bullets { margin-top: 20px; }
+    .project .desc { margin-top: 12px; font-size: 15.5px; }
+ 
+ 
+    /* Skills */
+    .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .skills .card { padding: 26px; border-radius: 24px; }
+    .skills h3 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); font-weight: 500; margin-bottom: 16px; }
+ 
+    /* Education */
+    .edu { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .edu .card { padding: 28px; border-radius: 24px; }
+    .edu .meta { color: var(--dim); font-size: 14px; margin-top: 10px; }
+    .edu p { margin-top: 6px; }
+ 
+    /* Contact */
+    .contact { text-align: center; padding: 64px 32px; }
+    .contact h2 { font-size: clamp(28px, 4.4vw, 42px); color: var(--white); font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
+    .contact p { margin: 18px auto 0; max-width: 520px; color: var(--soft); font-size: 17px; font-weight: 300; }
+    .contact .hero-actions { justify-content: center; margin-top: 34px; }
+ 
+    /* Footer */
+    footer { margin-top: 90px; padding: 32px 0 44px; border-top: 1px solid var(--line); }
+    .foot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; font-size: 14px; color: var(--dim); }
+    .foot nav { display: flex; gap: 22px; }
+    .foot nav a { color: var(--muted); position: relative; }
+    .foot nav a::after { content: ""; position: absolute; left: 0; bottom: -3px; width: 0; height: 2px; background: #d6d1d1; transition: width .3s ease; }
+    .foot nav a:hover::after { width: 100%; }
+ 
+    /* Reveal */
+    .js .fade { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+    .js .fade.show { opacity: 1; transform: none; }
+ 
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px) {
+      .focus, .skills { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 820px) {
+      .nav-toggle { display: inline-flex; align-items: center; }
+      .brand small { display: none; }
+      .nav {
+        display: none; position: absolute; top: calc(100% + 10px); left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 2px;
+        padding: 10px; border-radius: 20px; background: rgba(16, 16, 20, 0.96); border: 1px solid var(--line);
+      }
+      .nav.open { display: flex; }
+      .nav a { padding: 12px 14px; }
+      .nav .nav-cta { margin: 6px 0 0; text-align: center; }
+    }
+    @media (max-width: 720px) {
+      section { padding-top: 88px; }
+      .hero { padding-top: 72px; }
+      .hero .lead { font-size: 17px; }
+      .hero-actions .sep { display: none; }
+      .focus, .skills, .edu, .projects { grid-template-columns: 1fr; }
+      .card { padding: 24px; border-radius: 22px; }
+      .timeline { padding-left: 26px; }
+      .t-item::before { left: -26px; top: 32px; }
+      .contact { padding: 44px 22px; }
+      .foot { flex-direction: column; align-items: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .js .fade { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+ 
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+      <a href="#top" class="brand">Vasanthakumar S<small>Automation Engineer</small></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+ 
+    <main id="top">
+ 
+      <!-- ============ HERO ============ -->
+      <section class="hero" aria-label="Introduction">
+        <span class="status"><i></i>Open to opportunities</span>
+        <h1>Automation Engineer building reliable <em>workflows</em> and <em>test frameworks.</em></h1>
+        <p class="lead">MCA graduate with hands-on experience in n8n workflow automation, Python, REST API testing and Selenium UI automation.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="Vasanthakumar_S_Resume.pdf" class="btn btn-ghost" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+            Download resume
+          </a>
+          <span class="sep" aria-hidden="true"></span>
+          <div class="social">
+            <a class="icon-link" href="https://github.com/SAVS7" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a class="icon-link" href="https://www.linkedin.com/in/vasanthkumar7" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a class="icon-link" href="mailto:vaaaasanth7@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+ 
+      <!-- ============ ABOUT ============ -->
+      <section id="about">
+        <div class="section-head fade"><span class="eyebrow">01 &middot; About</span><h2>Turning manual processes into dependable automation.</h2></div>
+        <p class="about-text fade">I'm an MCA graduate who enjoys replacing repetitive manual work with systems that run on their own. During my internship I built <strong>automated workflows in n8n</strong> that connect forms, a database and email notifications. Alongside that, I build <strong>UI and API test frameworks in Python</strong> with Selenium, PyTest and Allure, structured with the Page Object Model and reusable fixtures.</p>
+ 
+        <div class="focus">
+          <article class="card lift fade">
+            <span class="num">01</span>
+            <h3>Workflow Automation</h3>
+            <p>Business-process workflows in n8n that connect forms, databases and email notifications.</p>
+            <div class="chips"><span class="chip">n8n</span><span class="chip">Baserow</span><span class="chip">Webhooks</span></div>
+          </article>
+          <article class="card lift fade">
+            <span class="num">02</span>
+            <h3>API Testing &amp; Integration</h3>
+            <p>REST API test suites in PyTest and Requests, working with JSON payloads and Postman.</p>
+            <div class="chips"><span class="chip">REST</span><span class="chip">JSON</span><span class="chip">Postman</span></div>
+          </article>
+          <article class="card lift fade">
+            <span class="num">03</span>
+            <h3>UI Test Automation</h3>
+            <p>Selenium frameworks built on the Page Object Model, run in Docker, reported with Allure.</p>
+            <div class="chips"><span class="chip">Selenium</span><span class="chip">POM</span><span class="chip">Allure</span></div>
+          </article>
+        </div>
+      </section>
+ 
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience">
+        <div class="section-head fade"><span class="eyebrow">02 &middot; Experience</span><h2>Where I've worked.</h2></div>
+        <div class="timeline">
+          <article class="card t-item fade">
+            <div class="t-head">
+              <div><h3>People and Operations Intern</h3><div class="t-org">Acumen Advisory Consulting LLC</div></div>
+              <span class="t-date">Aug 2026 &ndash; Sep 2026</span>
+            </div>
+            <ul class="bullets">
+              <li>Built an internal approval workflow in <b>n8n</b>, from form intake through to approval and status updates.</li>
+              <li>Integrated forms with <b>Baserow</b> to capture and manage request data.</li>
+              <li>Automated <b>approval routing</b> and status updates between stakeholders.</li>
+              <li>Configured automated <b>email notifications</b> at each stage of the workflow.</li>
+              <li>Explored <b>Apache Superset</b> for data visualization and reporting.</li>
+            </ul>
+          </article>
+          <article class="card t-item fade">
+            <div class="t-head">
+              <div><h3>Office Executive</h3><div class="t-org">D.S.K Paper Tubes &amp; Containers</div></div>
+              <span class="t-date">Jan 2024 &ndash; Sep 2025</span>
+            </div>
+            <ul class="bullets">
+              <li>Operated billing software and performed <b>CRUD operations</b> to validate and maintain business data.</li>
+              <li>Monitored background system processes to support smooth day-to-day operations.</li>
+              <li>Maintained digital records and operational documentation; coordinated with suppliers via email and software platforms.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+ 
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects">
+        <div class="section-head fade"><span class="eyebrow">03 &middot; Projects</span><h2>Selected work.</h2></div>
+        <div class="projects">
+ 
+          <article class="card project lift fade">
+            <div class="p-top">
+              <div><span class="p-tag">Python &middot; API testing</span><h3>API Automation Framework</h3></div>
+              <div class="p-links"><a class="icon-link" href="https://github.com/SAVS7/api-automation" target="_blank" rel="noopener" aria-label="API Automation Framework on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></div>
+            </div>
+            <ul class="bullets">
+              <li>Modular <b>REST API</b> test framework in PyTest and Requests, with separate API-client, utility, and test layers.</li>
+              <li>Automated validation of status codes, response payloads, and business logic.</li>
+              <li>Reusable <b>PyTest fixtures</b> (conftest.py) for setup, teardown, and shared configuration.</li>
+              <li>Interactive <b>Allure</b> dashboards showing passed, failed, and skipped tests with detailed logs.</li>
+            </ul>
+            <div class="chips"><span class="chip">Python</span><span class="chip">PyTest</span><span class="chip">Requests</span><span class="chip">Allure</span></div>
+          </article>
+ 
+          <article class="card project lift fade">
+            <div class="p-top">
+              <div><span class="p-tag">Python &middot; UI testing</span><h3>UI Automation Testing Framework</h3></div>
+              <div class="p-links"><a class="icon-link" href="https://github.com/SAVS7/ui-automation" target="_blank" rel="noopener" aria-label="UI Automation Testing Framework on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></div>
+            </div>
+            <ul class="bullets">
+              <li>UI test framework for <b>nopCommerce</b> using Selenium WebDriver and the <b>Page Object Model (POM)</b>, automating user registration, login, and product search.</li>
+              <li>Tests run against a locally hosted nopCommerce instance in <b>Docker</b> for stable, repeatable execution.</li>
+              <li>Screenshots captured on test failure and attached to <b>Allure</b> reports to support debugging.</li>
+            </ul>
+            <div class="chips"><span class="chip">Python</span><span class="chip">Selenium</span><span class="chip">PyTest</span><span class="chip">Docker</span></div>
+          </article>
+ 
+          <article class="card project lift wide fade">
+            <div class="p-top">
+              <div><span class="p-tag">Academic project</span><h3>Virtual Assistant</h3></div>
+              <div class="p-links"><a class="icon-link" href="https://github.com/SAVS7/Virtual_Assistant-Python" target="_blank" rel="noopener" aria-label="Virtual Assistant on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></div>
+            </div>
+            <p class="desc">A Python voice-command assistant that integrates speech recognition, text-to-speech, and external APIs to play YouTube songs, send WhatsApp messages, and retrieve Wikipedia summaries on request.</p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">Speech Recognition</span><span class="chip">External APIs</span></div>
+          </article>
+ 
+        </div>
+      </section>
+ 
+      <!-- ============ SKILLS ============ -->
+      <section id="skills">
+        <div class="section-head fade"><span class="eyebrow">04 &middot; Skills</span><h2>Tools I work with.</h2></div>
+        <div class="skills">
+          <article class="card fade"><h3>Workflow Automation</h3><div class="chips"><span class="chip">n8n</span><span class="chip">Business Process Automation</span><span class="chip">Approval Workflows</span><span class="chip">Email Notifications</span></div></article>
+          <article class="card fade"><h3>API &amp; Integration</h3><div class="chips"><span class="chip">REST APIs</span><span class="chip">Webhooks</span><span class="chip">JSON</span><span class="chip">Postman</span><span class="chip">Python Requests</span></div></article>
+          <article class="card fade"><h3>Test Automation</h3><div class="chips"><span class="chip">Selenium WebDriver</span><span class="chip">PyTest</span><span class="chip">Page Object Model</span><span class="chip">Allure Reports</span></div></article>
+          <article class="card fade"><h3>Data &amp; BI</h3><div class="chips"><span class="chip">MySQL</span><span class="chip">Baserow</span><span class="chip">Apache Superset</span></div></article>
+          <article class="card fade"><h3>Programming</h3><div class="chips"><span class="chip">Python</span><span class="chip">SQL</span></div></article>
+          <article class="card fade"><h3>Tools &amp; Platforms</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Docker</span><span class="chip">Linux/Unix</span><span class="chip">Windows</span></div></article>
+        </div>
+      </section>
+ 
+      <!-- ============ EDUCATION ============ -->
+      <section id="education">
+        <div class="section-head fade"><span class="eyebrow">05 &middot; Education</span><h2>Academic background.</h2></div>
+        <div class="edu">
+          <article class="card fade"><h3>Master of Computer Applications (MCA)</h3><p>University of Madras (IDE), Chennai</p><div class="meta">2023 &ndash; 2025</div></article>
+          <article class="card fade"><h3>Bachelor of Science in Computer Science</h3><p>Jaya College of Arts and Science, Chennai</p><div class="meta">2020 &ndash; 2023</div></article>
+        </div>
+      </section>
+ 
+      <!-- ============ CONTACT ============ -->
+      <section id="contact">
+        <div class="card contact fade">
+          <span class="eyebrow">06 &middot; Contact</span>
+          <h2>Let's build something reliable.</h2>
+          <p>I'm open to automation, QA automation and workflow engineering roles. Email is the best way to reach me.</p>
+          <div class="hero-actions">
+            <a href="mailto:vaaaasanth7@gmail.com" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg>
+              vaaaasanth7@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/vasanthkumar7" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+            <a href="https://github.com/SAVS7" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+ 
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      <div class="foot">
+        <span>&copy; <span id="year">2026</span> Vasanthakumar S</span>
+        <nav aria-label="Footer">
+          <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#top">Back to top</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+ 
+  <script>
+    (function () {
+      var yr = document.getElementById("year");
+      if (yr) yr.textContent = new Date().getFullYear();
+ 
+      // Scroll reveal
+      var fades = document.querySelectorAll(".fade");
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add("show"); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+        fades.forEach(function (el) { io.observe(el); });
+ 
+        // Active nav link
+        var links = Array.prototype.slice.call(document.querySelectorAll(".nav a"));
+        var so = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              links.forEach(function (l) { l.classList.toggle("active", l.getAttribute("href") === "#" + e.target.id); });
+            }
+          });
+        }, { rootMargin: "-45% 0px -50% 0px" });
+        links.forEach(function (l) {
+          var s = document.querySelector(l.getAttribute("href"));
+          if (s) so.observe(s);
+        });
+      } else {
+        fades.forEach(function (el) { el.classList.add("show"); });
+      }
+ 
+      // Mobile menu
+      var btn = document.querySelector(".nav-toggle");
+      var nav = document.getElementById("nav");
+      btn.addEventListener("click", function () {
+        var open = nav.classList.toggle("open");
+        btn.setAttribute("aria-expanded", open);
+      });
+      nav.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") { nav.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); }
+      });
+    })();
+  </script>
+</body>
+</html>
